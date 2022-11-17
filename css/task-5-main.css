@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import"nav.css";
+@import"footer.css";
+@import"side-bar.css";
+@import"header.css";
+@import"team.css";
+@import"shop.css";
+@import "scroll-btn.css";
+@import "list.css";
+
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Signika Negative', sans-serif; 
+transition: 0.4s ease-in-out;
+user-select: none;
+}
+
+html{
+background: #1a374d;
+background: no-repeat linear-gradient(114deg, rgba(26,55,77,1) 38%, rgba(64,104,130,1) 85%);
+background-size: cover;
+scroll-behavior: smooth;
+
+}
+
+
+main{
+width: 80%;
+margin: 30px auto;
+}

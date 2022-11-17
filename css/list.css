@@ -1,0 +1,170 @@
+#list{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+justify-content: center;
+}
+
+#list list{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+width: 300px;
+height: 400px;
+background-color: #fff;
+border-radius: 50px;
+box-shadow: -7px 11px 14px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -7px 11px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -7px 11px 14px 0px rgba(0,0,0,0.75);
+}
+
+#list list h1{
+/* border-top: 10px solid #1a374d;
+border-bottom: 10px solid #1a374d; */
+padding: 10px 20px;
+width: 100%;
+text-align: center;
+background-color: #1a374d;
+color: #fff;
+border-top-left-radius:50px ;
+border-top-right-radius:50px ;
+}
+
+#list list ul{
+/* display: flex;
+flex-direction: column;
+list-style: none;
+width: 80%;
+ */
+width: 100%;
+position: relative;
+padding: 20px;
+}
+
+#list list ul li{
+position: relative;
+list-style: none;
+padding: 5px 0;
+border-bottom: 1px solid #1a374d;
+height: 50px;
+}
+
+#list list ul li:last-child{
+border-bottom: none;
+
+}
+
+#list list ul li label{
+position: relative;
+display:flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+width: 100%;
+height: 100%;
+}
+
+#list list ul li label input{
+visibility: hidden;
+appearance: none;
+
+}
+
+#list list ul li label p{
+position: absolute;
+font-size: 16px;
+font-weight: bold;
+display: flex;
+align-self: center;
+justify-self: center;
+}
+
+#list list ul li label span{
+position: relative;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+border: 2px solid #1a374d;
+transition: .3s ease-in-out;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#list list ul li label span i{
+
+color: #fff;
+}
+
+#list list ul li label input:checked ~ span{
+background-color: #1a374d;
+}
+#list list ul li label input:checked ~ p{
+text-decoration: line-through;
+}
+/* ========= */
+#list share{
+margin-left: 10% ;
+
+}
+
+#list share p{
+font-size: 4rem;
+color: #fff;
+rotate: -10deg;
+text-transform: uppercase;
+line-height: 180px;
+}
+
+#list share share-flex{
+display: flex;
+position: relative;
+flex-direction:row;
+align-items: center;
+justify-content: center;
+width: fit-content;
+margin: 10px auto;
+
+}
+
+#list share button{
+outline: none;
+border: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #1a374d;
+font-size: 1.4rem;
+cursor: pointer;
+margin-right: 5px;
+}
+#list share share-flex li-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  opacity:0;
+}
+#list share share-flex li-flex li{
+list-style: none;
+width: 30px;
+height: 30px;
+background-color: #fff;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #1a374d;
+}
+
+
+#list share button:hover{
+scale: 90%;}

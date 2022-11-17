@@ -1,0 +1,99 @@
+side-bar{
+z-index: 1;
+position: fixed;
+left: 2%;
+top: 70px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-items: space-between;
+border-radius: 41px;
+background: linear-gradient(45deg, #173245, #1c3b52);
+box-shadow:  5px -5px 10px #0a161f,
+             -5px 5px 10px #2a587b;
+
+}
+side-bar a {
+text-decoration: none;
+}
+side-bar li{
+list-style: none;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+position: relative;
+
+
+}
+side-bar li icon-outer{
+border-radius: 63px;
+background: #1a374d;
+box-shadow: inset 15px -15px 16px #0a161f,
+            inset -15px 15px 16px #2a587b;             
+padding: 5px 8px ;
+margin: 5px;
+z-index: 2;
+}
+
+side-bar li button{
+outline: none;
+border: none;
+font-size: 16px;
+border-radius: 63px;
+background: linear-gradient(45deg, #173245, #1c3b52);
+box-shadow:  5px -5px 6px #0a161f,
+             -5px 5px 6px #2a587b;
+color: #fff;
+width: 45px;
+height: 45px;
+display: flex;
+align-items:center ;
+justify-content: center;
+text-align: center;
+cursor: pointer;
+z-index: 2;
+transition: all 0s;
+}
+side-bar li span{
+color: #1c3b52;
+position: absolute;
+left: 80%;
+white-space: nowrap;
+z-index: 1;
+font-size: 12px;
+display: flex;
+transform: translateX(0%);
+align-items: center;
+justify-content: center;
+width: 0%;
+overflow: hidden;
+height: 30%;
+background-color: aliceblue;
+font-weight: bold;
+letter-spacing: 1px;
+transition: .8s ease-in-out;
+text-transform: uppercase;
+
+}
+side-bar li icon-outer:hover + span{
+width: 150%;
+} 
+side-bar li button:active{
+
+border-radius: 69px;
+box-shadow:  3px -3px 3px #0a161f,
+             -3px 3px 3px #2a587b;
+}
+
+/* side-bar li button.active{
+color:#173245;
+border-radius: 59px;
+background: linear-gradient(45deg,#f0f0f0,#cacaca);
+box-shadow:  1px -1px 2px #fff ,
+             -1px 1px 2px #bebebe;
+ background: linear-gradient(45deg, #173245, #1c3b52);
+border-radius: 69px;
+box-shadow:  3px -3px 3px #0a161f,
+             -3px 3px 3px #2a587b; 
+} */
